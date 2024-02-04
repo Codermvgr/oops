@@ -1,4 +1,4 @@
-import java.lang.*;
+import java.lang.System;
 import java.util.Scanner;
 
 public class HelloUser {
