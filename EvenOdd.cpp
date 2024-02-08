@@ -18,7 +18,7 @@ void evenodd(int n)
 int main() {
  
     int number;
-    cout << "Enter a number : " ;
+    cout << "Enter an integer : " ;
     cin >> number;
     evenodd(number);
 
