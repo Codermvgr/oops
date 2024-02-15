@@ -20,24 +20,45 @@ class student{
             collegecode = code;
             sempercentage = percentage;
 
+
         }
-        ~student(){}
+        ~student(){
+            cout << "I am dead" <<endl;
+        }
         void printstudentdetails()
         {
-            cout << "Name : " << fullname         << endl
+            cout << "The student details : " << endl;
+            cout << "Name : " << fullname << endl
             << "Rollno : " << rollnum << endl
             << "College : " << collegename << endl
             << "College code : " << collegecode << endl
             << "Sem percentage : " << sempercentage   << endl;
         }
        
-        
+       
 };
-
 int main()
 {
-    student s1("Naga",59,"Mvgr",33,99);
+    string name;
+    int roll;
+    double semper;
+    string collname;
+    int collcode;
+    cout << "Enter your Full name : " ;
+    getline(cin,name);
+    cout << "Enter your Roll no : " ;
+    cin >> roll;
+    cout << "Enter your College name : " <<ends;
+    cin >> collname;
+    cout << "Enter your College code : " ;
+    cin >> collcode;
+    cout << "Enter your Sem percentage : " ;
+    cin >> semper;
 
-      s1.printstudentdetails();
+
+    student s(name,roll,collname,collcode,semper);
+
+
+    s.printstudentdetails();
    
 }
