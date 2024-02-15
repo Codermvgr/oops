@@ -1,9 +1,5 @@
 #include<iostream>
-
-
 using namespace std;
-
-
 class student{
     private:
         string fullname;
@@ -52,7 +48,6 @@ class student{
             rollnum = r;
         }
 };
-
 
 int main()
 {
