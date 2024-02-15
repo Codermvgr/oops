@@ -1,6 +1,8 @@
 #include<iostream>
 
+
 using namespace std;
+
 
 class student{
     private:
@@ -17,8 +19,11 @@ class student{
         }
         student(string name,double percentage)
         {
+            collegename = "MVGR";
+            collegecode = 33;
             fullname = name;
             sempercentage = percentage;
+
 
         }
         ~student(){}
@@ -34,7 +39,7 @@ class student{
         {
             cout << "Rollno : " << rollnum << endl ;
         }
-        void getstudentmarks()
+        void getsempercentage()
         {
             cout << "Sem percentage : " << sempercentage   << endl ;
         }
@@ -42,13 +47,32 @@ class student{
         {
             cout << "College code : " << collegecode << endl ;
         }
+        void setstudentrollno(int r)
+        {
+            rollnum = r;
+        }
 };
+
 
 int main()
 {
-    student s1("Naga",99);
-
-    s1.getstudentname() ; 
-            
-            
+    student s;
+    string name;
+    double sem;
+    int roll;
+    cout << "Enter your name : ";
+    getline(cin,name);
+    cout << "Enter your Roll no : ";
+    cin >> roll;
+    cout << "Enter your percentage : ";
+    cin >> sem;
+    s={name,sem};
+    s.setstudentrollno(roll);
+    cout << "The student details :" << endl;
+    s.getstudentname();
+    s.getstudentrollno();
+    s.getcollegename();
+    s.getcollegecode();
+    s.getsempercentage();          
+           
 }
