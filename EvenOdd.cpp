@@ -10,7 +10,7 @@ void evenodd(int n)
     }
     else
     {
-        cout << n << " is a even number" << endl;  
+        cout << n << " is a odd number" << endl;  
     }
 }
 
