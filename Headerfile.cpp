@@ -1,13 +1,13 @@
 #include <iostream>
 #include "boxArea.h"
-#include "boxvolume.h"
+#include "boxVolume.h"
 
-// #ifdef void boxArea(float,float,float)
-    // #defined void boxArea(float,float,float)
 int main()
 {
-    // boxArea(2.5,2,2);
-    // boxvolume(1,2,3.9);
-    
+    float l,b,h;
+    cout << "Enter the length , width and height : ";
+    cin >> l >> b >> h ;
+    boxArea(l,b,h);
+    boxvolume(l,b,h);
 
 }
