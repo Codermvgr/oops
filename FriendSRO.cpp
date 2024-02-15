@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 
-inline void msg() { cout << "Welcome to C++" << endl ;}
+inline void displayWelcomeMessage() { cout << "Welcome to C++" << endl ;}
+
 
 class Box{
     public:
         float length,width,height;
-    public:
         Box(){
             length = width = height = 1;
         }
@@ -24,16 +24,10 @@ class Box{
             float area = 2*(length*width+width*height+height*length);
             cout << "Area of the box is " << area << endl;
         }
-        void boxArea()
-        {
-            float area = 2*(length*width+width*height+height*length);
-            cout << "Area of the box is " << area << endl;
-        }
-        void boxvolume(float length,float width,float height)
-        {
-            float vol = length*width*height;
-            cout << "Volume of the box is " << vol << endl;
-        }
+        void boxvolume(float length,float width,float height);
+        friend void displayBoxDimensions(Box);
+        
+        
 };
 void displayBoxDimensions(Box b)
 {
@@ -41,11 +35,23 @@ void displayBoxDimensions(Box b)
     cout << "width : " << b.width << endl;
     cout << "height : " << b.height << endl;
 }
+
+void Box:: boxvolume(float length,float width,float height)
+{
+    float vol = length*width*height;
+    cout << "Volume of the box is " << vol << endl;
+}
+
 int main()
 {
-    Box b {1,2,3};
-    displayBoxDimensions(b);
-    msg();
-    b.boxArea();
-    b.~Box();
+    float l,b,h;
+    cout << "Enter the length , width and height : ";
+    cin >> l >> b >> h ;
+    Box d(l,b,h);
+    displayBoxDimensions(d);
+    d.boxArea(d.length,d.width,d.height);
+    d.boxvolume(l,b,h);
+    displayWelcomeMessage();
+    
+    
 }
