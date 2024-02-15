@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+
 inline void displayWelcomeMessage() { cout << "Welcome to C++" << endl ;}
 
 
@@ -17,8 +18,7 @@ class Box{
             height = h ;
             cout << "I am created" << endl;
         }
-        ~Box() { cout << "I am Dead" << endl ;}
-    
+        ~Box(){}
         void boxArea(float length,float width,float height)
         {
             float area = 2*(length*width+width*height+height*length);
@@ -26,8 +26,8 @@ class Box{
         }
         void boxvolume(float length,float width,float height);
         friend void displayBoxDimensions(Box);
-        
-        
+       
+       
 };
 void displayBoxDimensions(Box b)
 {
@@ -36,14 +36,19 @@ void displayBoxDimensions(Box b)
     cout << "height : " << b.height << endl;
 }
 
+
 void Box:: boxvolume(float length,float width,float height)
 {
     float vol = length*width*height;
     cout << "Volume of the box is " << vol << endl;
 }
 
+
+
+
 int main()
 {
+    displayWelcomeMessage();
     float l,b,h;
     cout << "Enter the length , width and height : ";
     cin >> l >> b >> h ;
@@ -51,7 +56,6 @@ int main()
     displayBoxDimensions(d);
     d.boxArea(d.length,d.width,d.height);
     d.boxvolume(l,b,h);
-    displayWelcomeMessage();
-    
-    
+       
+   
 }
