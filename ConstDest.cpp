@@ -12,7 +12,7 @@ class student{
         int collegecode;
     public:
         student(){}
-        student(string name,int roll,string college,int code,double percentage)
+        student(string name,int roll,string college,int code,double percentage)     
         {
             fullname = name;
             rollnum = roll;
