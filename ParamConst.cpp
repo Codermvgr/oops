@@ -19,29 +19,16 @@ class student{
             collegecode = 33;
             fullname = name;
             sempercentage = percentage;
-
-
         }
         ~student(){}
-        void getstudentname()
+        void getstudentdetails()
         {
+            cout << "The student details :" << endl;
             cout << "Name : " << fullname  << endl ;
-        }
-        void getcollegename()
-        {
-            cout << "College : " << collegename << endl ;
-        }
-        void getstudentrollno()
-        {
             cout << "Rollno : " << rollnum << endl ;
-        }
-        void getsempercentage()
-        {
-            cout << "Sem percentage : " << sempercentage   << endl ;
-        }
-        void getcollegecode()
-        {
+            cout << "College : " << collegename << endl ;
             cout << "College code : " << collegecode << endl ;
+            cout << "Sem percentage : " << sempercentage   << endl ;
         }
         void setstudentrollno(int r)
         {
@@ -62,12 +49,7 @@ int main()
     cout << "Enter your percentage : ";
     cin >> sem;
     s={name,sem};
-    s.setstudentrollno(roll);
-    cout << "The student details :" << endl;
-    s.getstudentname();
-    s.getstudentrollno();
-    s.getcollegename();
-    s.getcollegecode();
-    s.getsempercentage();          
+    s.setstudentrollno(roll); 
+    s.getstudentdetails();         
            
 }
