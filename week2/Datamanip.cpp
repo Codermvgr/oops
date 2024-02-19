@@ -8,18 +8,18 @@ int main()
 	string str;
 
     // usage of ws and endl
-	cout << "Enter a string :" <<ends;
-	getline(cin >> ws, str);  
-	cout << str << endl;
+    cout << "Enter a string :" <<ends;
+    getline(cin >> ws, str);  
+    cout << str << endl;
     
-	// usage of flush
-	cout << "line without flush" << endl;
-	cout << "line with flush" << flush ;
+    // usage of flush
+    cout << "line without flush" << endl;
+    cout << "line with flush" << flush ;
     
     // usage of ends
-	cout << "\na";
-	cout << "b" << ends;
-	cout << "c" << endl;
+    cout << "\na";
+    cout << "b" << ends;
+    cout << "c" << endl;
     
     // usage of setw() , setfill() ,setprecision()
     cout << setw(5) << "10" << endl;
@@ -27,7 +27,7 @@ int main()
     double pi = 3.141325;
     cout << setprecision(3) << pi << endl;
 
-	return 0;
+    return 0;
 }
    
 
