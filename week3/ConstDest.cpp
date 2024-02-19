@@ -1,8 +1,5 @@
 #include<iostream>
 using namespace std;
-
-inline void msg() { cout << "Welcome to C++" << endl ;}
-
 class student{
     private:
         string fullname;
