@@ -1,10 +1,6 @@
 #include<iostream>
 using namespace std;
-
-
 inline void displayWelcomeMessage() { cout << "Welcome to C++" << endl ;}
-
-
 class Box{
     public:
         float length,width,height;
@@ -25,9 +21,7 @@ class Box{
             cout << "Area of the box is " << area << endl;
         }
         void boxvolume(float length,float width,float height);
-        friend void displayBoxDimensions(Box);
-       
-       
+        friend void displayBoxDimensions(Box);      
 };
 void displayBoxDimensions(Box b)
 {
@@ -35,17 +29,11 @@ void displayBoxDimensions(Box b)
     cout << "width : " << b.width << endl;
     cout << "height : " << b.height << endl;
 }
-
-
 void Box:: boxvolume(float length,float width,float height)
 {
     float vol = length*width*height;
     cout << "Volume of the box is " << vol << endl;
 }
-
-
-
-
 int main()
 {
     displayWelcomeMessage();
@@ -55,7 +43,5 @@ int main()
     Box d(l,b,h);
     displayBoxDimensions(d);
     d.boxArea(d.length,d.width,d.height);
-    d.boxvolume(l,b,h);
-       
-   
+    d.boxvolume(l,b,h);   
 }
