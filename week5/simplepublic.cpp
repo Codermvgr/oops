@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
-class Superclass{
 
+class Superclass{
 
     public:
         int a = 10;
