@@ -6,7 +6,6 @@ class Rectangle {
     private:
         float length,breadth;
 
-
     public:
         Rectangle(float l=0,float b=0) : length(l),breadth(b) {}
         double area()
