@@ -4,7 +4,6 @@ using namespace std;
 
 class Superclass{
 
-
     public:
         int a = 10;
     private:
