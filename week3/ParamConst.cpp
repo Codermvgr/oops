@@ -13,10 +13,8 @@ class student{
             collegename = "MVGR";
             collegecode = 33;
         }
-        student(string name,double percentage)
+        student(string name,double percentage):student()
         {
-            collegename = "MVGR";
-            collegecode = 33;
             fullname = name;
             sempercentage = percentage;
         }
