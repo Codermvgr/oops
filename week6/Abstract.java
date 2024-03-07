@@ -16,7 +16,7 @@ class AccessSpecifierDemo{
         System.out.println("Protected variable: " + proVar );
         System.out.println("Public variable: " + pubVar );
     }
-
+    
 };
 public class Abstract{
     public static void main(String[] args) {
