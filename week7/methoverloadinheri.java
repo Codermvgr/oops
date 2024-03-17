@@ -17,7 +17,7 @@ public class methoverloadinheri {
     public static void main(String[] args) {
         Child c = new Child();
         c.print();
-        c.print("MVGR");
+        c.print("MVGR"); //method overloading
     }
 
 }
