@@ -25,7 +25,7 @@ int main(){
     
     Child c;
     c.print();
-    //c.print("MVGR");
+    //c.print("MVGR"); // it gives error
 
 }
     
