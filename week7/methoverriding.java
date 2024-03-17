@@ -1,4 +1,3 @@
-
 class Parent {
     void print() {
         System.out.println("This is a Parent method");
