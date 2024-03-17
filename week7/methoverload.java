@@ -7,7 +7,7 @@ class Cal{
     public float add(float a,float b,float c){
         return a+b+c;
     }
-};
+}
 
 public class methoverload {
     public static void main(String[] args) {
